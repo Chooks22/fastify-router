@@ -1,0 +1,38 @@
+{
+  "name": "@chooks22/fastify-router",
+  "description": "Simple Express-like router for Fastify",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "exports": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "node --test src/test.ts"
+  },
+  "dependencies": {
+    "fastify-plugin": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.10",
+    "chooks-eslint-config": "1.0.0-rc.1",
+    "eslint": "9.30.1",
+    "rimraf": "6.0.1",
+    "typescript": "5.8.3"
+  },
+  "peerDependencies": {
+    "fastify": "^5.0.0"
+  },
+  "author": "Chooks22 <chooksdev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chooks22/fastify-router.git"
+  },
+  "keywords": [
+    "fastify",
+    "router"
+  ]
+}
