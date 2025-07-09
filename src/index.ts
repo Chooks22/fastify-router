@@ -56,5 +56,26 @@ function create_router<App extends FastifyInstance = FastifyInstance>(): Router<
   return router
 }
 
+/**
+ * Create an instance of a router.
+ *
+ * ```js
+ * // router.js
+ * import { createRouter } from '@chooks22/fastify-router';
+ *
+ * const router = createRouter();
+ * export default router;
+ * ```
+ *
+ * ```js
+ * // index.js
+ * import fastify from 'fastify';
+ * import router from './router.js';
+ *
+ * const app = fastify();
+ *
+ * await app.register(router);
+ * ```
+ */
 export let Router: typeof create_router = create_router
 export { Router as createRouter }
