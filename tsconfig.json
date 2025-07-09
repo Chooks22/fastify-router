@@ -20,7 +20,6 @@
     "outDir": "dist"
   },
   "exclude": [
-    "dist",
-    "src/test.ts"
+    "dist"
   ]
 }

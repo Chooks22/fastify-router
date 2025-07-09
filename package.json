@@ -10,7 +10,7 @@
     "./dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
     "test": "node --test src/test.ts"
   },
   "dependencies": {
