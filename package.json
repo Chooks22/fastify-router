@@ -1,7 +1,7 @@
 {
   "name": "@chooks22/fastify-router",
   "description": "Simple Express-like router for Fastify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "MIT",
   "packageManager": "pnpm@10.11.0",
