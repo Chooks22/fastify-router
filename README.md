@@ -28,9 +28,9 @@ import fastify from 'fastify';
 import api from './api.js';
 
 const app = fastify();
-const port = Number(process.env.PORT ?? '3000');
+const port = Number(process.env.PORT) || 3000;
 
-await app.register(app, { prefix: '/api/v1' });
+await app.register(api, { prefix: '/api/v1' });
 await app.listen({ port });
 
 const res = await fetch(`http://localhost:${port}/api/v1/time`);
